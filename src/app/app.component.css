@@ -1,0 +1,33 @@
+footer{
+    margin-top: 2em;
+    bottom: 0em;
+    background-color: aquamarine;
+    height: 10em;
+}
+
+.resume{
+    background-color:darksalmon;
+    padding: 5em;
+}
+
+
+#wrapper {
+  overflow-x: hidden;
+}
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: 0rem;
+  transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
+  margin-left: 0;
+}

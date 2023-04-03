@@ -1,0 +1,33 @@
+.no-border {
+    border: 0;
+    box-shadow: none;
+}
+
+.autosize01{
+    min-width: 100%;
+    min-height: 2em;
+    max-width:90vw;
+    overflow: hidden;
+    height: fit-content;
+}
+
+.txta {
+    width: 100%;
+    max-width: 100%;
+    min-height: 100px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    overflow: hidden;
+    line-height: 1.4;
+}
+
+/* .hiddendiv {
+    display: none;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+} */
+
+.autosize {
+    resize: none;
+    overflow: hidden;
+  }

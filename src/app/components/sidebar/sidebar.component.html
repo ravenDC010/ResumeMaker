@@ -1,0 +1,147 @@
+<!-- <div class="col-2">
+    <button *ngIf="addPhoneToggle" (click)="addPhone()" class="btn btn-primary btn-sm">ADD
+        PHONE</button>
+    <button *ngIf="!addPhoneToggle" (click)="removePhone()" class="btn btn-primary btn-sm">REMOVE
+        PHONE</button>
+</div>
+<div class="col-2">
+    <button *ngIf="addEmailToggle" (click)="addEmail()" class="btn btn-primary btn-sm">ADD
+        EMAIL</button>
+    <button *ngIf="!addEmailToggle" (click)="removeEmail()" class="btn btn-primary btn-sm">REMOVE
+        EMAIL</button>
+</div>
+<div class="col-2">
+    <button *ngIf="addDobToggle" (click)="addDob()" class="btn btn-primary btn-sm">ADD
+        DOB</button>
+    <button *ngIf="!addDobToggle" (click)="removeDob()" class="btn btn-primary btn-sm">REMOVE
+        DOB</button>
+</div>
+<div class="col-2">
+    <button *ngIf="addCityToggle" (click)="addCity()" class="btn btn-primary btn-sm">ADD
+        CITY</button>
+    <button *ngIf="!addCityToggle" (click)="removeCity()" class="btn btn-primary btn-sm">REMOVE
+        CITY</button>
+</div>
+<div class="col-2">
+    <button *ngIf="addLinkedinToggle" (click)="addLinkedin()" class="btn btn-primary btn-sm">ADD
+        LIKNEDIN URL</button>
+    <button *ngIf="!addLinkedinToggle" (click)="removeLinkedin()" class="btn btn-primary btn-sm">REMOVE
+        LINKEDIN URL</button>
+</div>
+<div class="col-2">
+    <button *ngIf="addGithubToggle" (click)="addGithub()" class="btn btn-primary btn-sm">ADD
+        GITHUB URL</button>
+    <button *ngIf="!addGithubToggle" (click)="removeGithub()" class="btn btn-primary btn-sm">REMOVE
+        GITHUB URL</button>
+</div> -->
+<button *ngIf="addPhoneToggle" (click)="addPhone()"
+    class="list-group-item list-group-item-action list-group-item-lightsidebarBtn">ADD
+    PHONE</button>
+<button *ngIf="!addPhoneToggle" (click)="removePhone()"
+    class="list-group-item list-group-item-action list-group-item-lightsidebarBtn">REMOVE
+    PHONE</button>
+<button *ngIf="addEmailToggle" (click)="addEmail()"
+    class="list-group-item list-group-item-action list-group-item-lightsidebarBtn">ADD
+    EMAIL</button>
+<button *ngIf="!addEmailToggle" (click)="removeEmail()"
+    class="list-group-item list-group-item-action list-group-item-lightsidebarBtn">REMOVE
+    EMAIL</button>
+<button *ngIf="addDobToggle" (click)="addDob()"
+    class="list-group-item list-group-item-action list-group-item-lightsidebarBtn">ADD
+    DOB</button>
+<button *ngIf="!addDobToggle" (click)="removeDob()"
+    class="list-group-item list-group-item-action list-group-item-lightsidebarBtn">REMOVE
+    DOB</button>
+<button *ngIf="addCityToggle" (click)="addCity()"
+    class="list-group-item list-group-item-action list-group-item-lightsidebarBtn">ADD
+    CITY</button>
+<button *ngIf="!addCityToggle" (click)="removeCity()"
+    class="list-group-item list-group-item-action list-group-item-lightsidebarBtn">REMOVE
+    CITY</button>
+<button *ngIf="addLinkedinToggle" (click)="addLinkedin()"
+    class="list-group-item list-group-item-action list-group-item-lightsidebarBtn">ADD
+    LIKNEDIN URL</button>
+<button *ngIf="!addLinkedinToggle" (click)="removeLinkedin()"
+    class="list-group-item list-group-item-action list-group-item-lightsidebarBtn">REMOVE
+    LINKEDIN URL</button>
+<button *ngIf="addGithubToggle" (click)="addGithub()"
+    class="list-group-item list-group-item-action list-group-item-lightsidebarBtn">ADD
+    GITHUB URL</button>
+<button *ngIf="!addGithubToggle" (click)="removeGithub()"
+    class="list-group-item list-group-item-action list-group-item-lightsidebarBtn">REMOVE
+    GITHUB URL</button>
+
+
+<button *ngIf="addSummaryToggle" (click)="addSummary()"
+    class="list-group-item list-group-item-action list-group-item-lightsidebarBtn">ADD
+    SUMMARY</button>
+<button *ngIf="!addSummaryToggle" (click)="removeSummary()"
+    class="list-group-item list-group-item-action list-group-item-lightsidebarBtn">REMOVE
+    SUMMARY</button>
+<button *ngIf="addWorkToggle" (click)="addOverallWork()"
+    class="list-group-item list-group-item-action list-group-item-lightsidebarBtn">ADD
+    WORK</button>
+<button *ngIf="!addWorkToggle" (click)="removeOverallWork()"
+    class="list-group-item list-group-item-action list-group-item-lightsidebarBtn">REMOVE
+    ALL WORK</button>
+<button *ngIf="!addWorkToggle" (click)="addNewWorkExperience()"
+    class="list-group-item list-group-item-action list-group-item-lightsidebarBtn">ADD NEW WORK</button>
+    
+    <span *ngFor="let num1 of workNum; let i = index">
+        <button *ngIf="!addWorkToggle" (click)="removeWorkExperience(num1)"
+        class="list-group-item list-group-item-action list-group-item-lightsidebarBtn">REMOVE WORK {{i+1}}</button>
+    </span>
+
+
+<button *ngIf="addEducationToggle" (click)="addOverallEducation()"
+    class="list-group-item list-group-item-action list-group-item-lightsidebarBtn">ADD
+    EDUCATION</button>
+<button *ngIf="!addEducationToggle" (click)="removeOverallEducation()"
+    class="list-group-item list-group-item-action list-group-item-lightsidebarBtn">REMOVE
+    ALL EDUCATION</button>
+<button *ngIf="!addEducationToggle" (click)="addNewEducation()"
+    class="list-group-item list-group-item-action list-group-item-lightsidebarBtn">ADD
+    NEW EDUCATION</button>
+    <span *ngFor="let num1 of educationNum">
+        <button *ngIf="!addEducationToggle" (click)="removeEducation(num1)"
+        class="list-group-item list-group-item-action list-group-item-lightsidebarBtn">REMOVE EDUCATION {{num1}}</button>
+    </span>
+
+
+<button *ngIf="addProjectToggle" (click)="addOverallProject()"
+    class="list-group-item list-group-item-action list-group-item-lightsidebarBtn">ADD
+    PROJECT</button>
+<button *ngIf="!addProjectToggle" (click)="removeOverallProject()"
+    class="list-group-item list-group-item-action list-group-item-lightsidebarBtn">REMOVE
+    ALL PROJECT</button>
+<button *ngIf="!addProjectToggle" (click)="addNewProject()"
+    class="list-group-item list-group-item-action list-group-item-lightsidebarBtn">ADD NEW
+    PROJECT</button>
+    <span *ngFor="let num1 of projectNum">
+        <button *ngIf="!addProjectToggle" (click)="removeProject(num1)"
+        class="list-group-item list-group-item-action list-group-item-lightsidebarBtn">REMOVE PROJECT {{num1}}</button>
+    </span>
+
+
+
+<button *ngIf="addCertificationToggle" (click)="addOverallCertification()"
+    class="list-group-item list-group-item-action list-group-item-lightsidebarBtn">ADD
+    CERTIFICATION</button>
+<button *ngIf="!addCertificationToggle" (click)="removeOverallCertification()"
+    class="list-group-item list-group-item-action list-group-item-lightsidebarBtn">REMOVE
+    ALL CERTIFICATION</button>
+<button *ngIf="!addCertificationToggle" (click)="addNewCertification()"
+    class="list-group-item list-group-item-action list-group-item-lightsidebarBtn">ADD NEW CERTIFICATION</button>
+    <span *ngFor="let num1 of certificationNum">
+        <button *ngIf="!addCertificationToggle" (click)="removeCertification(num1)"
+        class="list-group-item list-group-item-action list-group-item-lightsidebarBtn">REMOVE CERTIFICATION {{num1}}</button>
+    </span>
+
+
+
+<button *ngIf="addSkillToggle" (click)="addSkill()"
+    class="list-group-item list-group-item-action list-group-item-lightsidebarBtn">ADD
+    SKILLS</button>
+<button *ngIf="!addSkillToggle" (click)="removeSkill()"
+    class="list-group-item list-group-item-action list-group-item-lightsidebarBtn">REMOVE
+    SKILLS</button>
