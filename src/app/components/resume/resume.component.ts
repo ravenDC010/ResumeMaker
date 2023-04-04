@@ -12,6 +12,13 @@ import html2canvas from 'html2canvas';
 })
 export class ResumeComponent implements OnInit {
 
+  phone: boolean = false;
+  email: boolean = false;
+  dob: boolean = false;
+  city: boolean = false;
+  linkedin: boolean = false;
+  github: boolean = false;
+
   work: boolean = false;
   education: boolean = false;
   project: boolean = false;
@@ -24,6 +31,61 @@ export class ResumeComponent implements OnInit {
     this.toggleEducation();
     this.toggleProject();
     this.toggleCertification();
+    this.togglePhone();
+    this.toggleEmail();
+    this.toggleDob();
+    this.toggleCity();
+    this.toggleLinkedin();
+    this.toggleGithub();
+  }
+
+  togglePhone() {
+    this.commonService.phones.subscribe(
+      data => {
+        this.phone = data;
+        console.log("phone: ",this.phone);
+      }
+    );
+  }
+
+  toggleEmail() {
+    this.commonService.emails.subscribe(
+      data => {
+        this.email = data;
+      }
+    );
+  }
+
+  toggleDob() {
+    this.commonService.dobs.subscribe(
+      data => {
+        this.dob = data;
+      }
+    );
+  }
+
+  toggleCity() {
+    this.commonService.cities.subscribe(
+      data => {
+        this.city = data;
+      }
+    );
+  }
+
+  toggleLinkedin() {
+    this.commonService.linkedins.subscribe(
+      data => {
+        this.linkedin = data;
+      }
+    );
+  }
+
+  toggleGithub() {
+    this.commonService.githubs.subscribe(
+      data => {
+        this.github = data;
+      }
+    );
   }
 
   toggleWorkExperience() {

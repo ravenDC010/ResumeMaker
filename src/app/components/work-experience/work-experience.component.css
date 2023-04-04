@@ -2,3 +2,16 @@
     border: 0;
     box-shadow: none;
 }
+
+.autosize01 {
+    min-width: 100%;
+    min-height: 2em;
+    max-width: 90vw;
+    overflow: hidden;
+    height: fit-content;
+    padding: 0.5em 1em;
+}
+
+[contentEditable=true]:empty:not(:focus):before {
+    content: attr(data-text)
+}

@@ -1,108 +1,5 @@
 <div class="container-fluid">
     <div class="row mt-3">
-        <div class="offset-1 col-md-8">
-            <!-- <div class="row"> -->
-
-                <!-- <div class="col-2">
-                    <button *ngIf="addPhoneToggle" (click)="addPhone()" class="btn btn-primary btn-sm">ADD
-                        PHONE</button>
-                    <button *ngIf="!addPhoneToggle" (click)="removePhone()" class="btn btn-primary btn-sm">REMOVE
-                        PHONE</button>
-                </div>
-                <div class="col-2">
-                    <button *ngIf="addEmailToggle" (click)="addEmail()" class="btn btn-primary btn-sm">ADD
-                        EMAIL</button>
-                    <button *ngIf="!addEmailToggle" (click)="removeEmail()" class="btn btn-primary btn-sm">REMOVE
-                        EMAIL</button>
-                </div>
-                <div class="col-2">
-                    <button *ngIf="addDobToggle" (click)="addDob()" class="btn btn-primary btn-sm">ADD
-                        DOB</button>
-                    <button *ngIf="!addDobToggle" (click)="removeDob()" class="btn btn-primary btn-sm">REMOVE
-                        DOB</button>
-                </div>
-                <div class="col-2">
-                    <button *ngIf="addCityToggle" (click)="addCity()" class="btn btn-primary btn-sm">ADD
-                        CITY</button>
-                    <button *ngIf="!addCityToggle" (click)="removeCity()" class="btn btn-primary btn-sm">REMOVE
-                        CITY</button>
-                </div>
-                <div class="col-2">
-                    <button *ngIf="addLinkedinToggle" (click)="addLinkedin()" class="btn btn-primary btn-sm">ADD
-                        LIKNEDIN URL</button>
-                    <button *ngIf="!addLinkedinToggle" (click)="removeLinkedin()" class="btn btn-primary btn-sm">REMOVE
-                        LINKEDIN URL</button>
-                </div>
-                <div class="col-2">
-                    <button *ngIf="addGithubToggle" (click)="addGithub()" class="btn btn-primary btn-sm">ADD
-                        GITHUB URL</button>
-                    <button *ngIf="!addGithubToggle" (click)="removeGithub()" class="btn btn-primary btn-sm">REMOVE
-                        GITHUB URL</button>
-                </div> -->
-
-
-                <!-- <div class="col-2">
-                    <button *ngIf="addSummaryToggle" (click)="addSummary()" class="btn btn-primary btn-sm">ADD
-                        SUMMARY</button>
-                    <button *ngIf="!addSummaryToggle" (click)="removeSummary()" class="btn btn-primary btn-sm">REMOVE
-                        SUMMARY</button>
-                </div>
-                <div class="col-2">
-                    <button *ngIf="addWorkToggle" (click)="addWork()" class="btn btn-primary btn-sm">ADD
-                        WORK</button>
-                    <button *ngIf="!addWorkToggle" (click)="removeWork()" class="btn btn-primary btn-sm">REMOVE
-                        ALL WORK</button>
-                </div>
-                <div class="col-2">
-                    <button *ngIf="addEducationToggle" (click)="addEducation()" class="btn btn-primary btn-sm">ADD
-                        EDUCATION</button>
-                    <button *ngIf="!addEducationToggle" (click)="removeEducation()"
-                        class="btn btn-primary btn-sm">REMOVE
-                        ALL EDUCATION</button>
-                </div>
-                <div class="col-2">
-                    <button *ngIf="addProjectToggle" (click)="addProject()" class="btn btn-primary btn-sm">ADD
-                        PROJECT</button>
-                    <button *ngIf="!addProjectToggle" (click)="removeProject()" class="btn btn-primary btn-sm">REMOVE
-                        ALL PROJECT</button>
-                </div>
-                <div class="col-2">
-                    <button *ngIf="addCertificationToggle" (click)="addCertification()"
-                        class="btn btn-primary btn-sm">ADD
-                        CERTIFICATION</button>
-                    <button *ngIf="!addCertificationToggle" (click)="removeCertification()"
-                        class="btn btn-primary btn-sm">REMOVE
-                        ALL CERTIFICATION</button>
-                </div>
-                <div class="col-2">
-                    <button *ngIf="addSkillToggle" (click)="addSkill()" class="btn btn-primary btn-sm">ADD
-                        SKILLS</button>
-                    <button *ngIf="!addSkillToggle" (click)="removeSkill()" class="btn btn-primary btn-sm">REMOVE
-                        SKILLS</button>
-                </div>
-
-                <div *ngIf="!addWorkToggle" class="col-2">
-                    <button (click)="addNewWorkExperience()" class="btn btn-primary btn-sm">ADD NEW WORK</button>
-                </div>
-                <div class="col-2">
-                    <button *ngIf="!addEducationToggle" (click)="addNewEducation()" class="btn btn-primary btn-sm">ADD
-                        NEW EDUCATION</button>
-                </div>
-                <div class="col-2">
-                    <button *ngIf="!addProjectToggle" (click)="addNewProject()" class="btn btn-primary btn-sm">ADD NEW
-                        PROJECT</button>
-                </div>
-                <div class="col-2">
-                    <button *ngIf="!addCertificationToggle" (click)="addNewCertification()"
-                        class="btn btn-primary btn-sm">ADD NEW CERTIFICATION</button>
-                </div> -->
-            <!-- </div> -->
-        </div>
-        <div class="col-md-1">
-            <button class="btn btn-secondary btn-sm" (click)="download()">DOWNLOAD RESUME</button>
-        </div>
-    </div>
-    <div class="row mt-3">
         <div class="offset-2 col-md-6">
             <h2 class="text-center">
                 My Resume
@@ -110,33 +7,38 @@
         </div>
     </div>
     <div class="row">
-        <div class="offset-1 col-md-8 resume">
+        <button class="offset-4 col-md-2 btn btn-secondary btn-sm" (click)="download()">DOWNLOAD RESUME</button>
+    </div>
+    <div class="row">
+        <div class="offset-1 col-md-8 resume mt-3">
             <div class="card" id="resume">
                 <div class="card-body">
-                    <h2 class="card-title">
-                        <span class="text-wrap">
-                            <input type="text" class="text-center form-control no-border" style="font-size: 32px; font-weight: bold;" placeholder="Here goes your name">
-                        </span>
+                    <h2 class="card-title mt-2">
+                        <input type="text" class="text-center form-control no-border"
+                            style="font-size: 24px; font-weight: bold;" placeholder="May I know your name">
                     </h2>
-                    <div class="row">
-                        <div class="col-4">
-                            <app-phone></app-phone>
+                    <div>
+                        <div class="d-flex flex-wrap justify-content-center">
+                            <!-- <div class="col-4 bg-primary"> -->
+                            <app-phone style="padding-left: 1em;"></app-phone>
+                            <!-- </div> -->
+                            <!-- <div class="col-4 bg-danger"> -->
+                            <app-email style="padding-left: 1em;"></app-email>
+                            <!-- </div> -->
+                            <!-- <div class="col-4"> -->
+                            <app-dob style="padding-left: 1em;"></app-dob>
+                            <!-- </div> -->
+                            <!-- <div class="col-4"> -->
+                            <app-city style="padding-left: 1em;"></app-city>
+                            <!-- </div> -->
+                            <!-- <div class="col-4"> -->
+                            <app-linkedin style="padding-left: 1em;"></app-linkedin>
+                            <!-- </div> -->
+                            <!-- <div class="col-4"> -->
+                            <app-github style="padding-left: 1em;"></app-github>
+                            <!-- </div> -->
                         </div>
-                        <div class="col-4">
-                            <app-email></app-email>
-                        </div>
-                        <div class="col-4">
-                            <app-dob></app-dob>
-                        </div>
-                        <div class="col-4">
-                            <app-city></app-city>
-                        </div>
-                        <div class="col-4">
-                            <app-linkedin></app-linkedin>
-                        </div>
-                        <div class="col-4">
-                            <app-github></app-github>
-                        </div>
+
                     </div>
                     <hr>
 
@@ -153,6 +55,7 @@
                         <span class="text-wrap">
                             <app-work-experience></app-work-experience>
                         </span>
+                        <hr>
                     </div>
                     <!-- </div> -->
                     <!-- work end -->
@@ -165,6 +68,7 @@
                         <span class="text-wrap">
                             <app-education></app-education>
                         </span>
+                        <hr>
                     </div>
                     <!-- education end -->
 
@@ -176,6 +80,7 @@
                         <span class="text-wrap">
                             <app-project></app-project>
                         </span>
+                        <hr>
                     </div>
                     <!-- project end -->
 
@@ -187,6 +92,7 @@
                         <span class="text-wrap">
                             <app-certification></app-certification>
                         </span>
+                        <hr>
                     </div>
                     <!-- project end -->
 

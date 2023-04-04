@@ -1,14 +1,15 @@
 <span *ngFor="let num1 of num" id="project_{{num1}}">
     <div class="div row">
-        <span class="col-6 bg-success">
-            <input type="text" class="form-control no-border" placeholder="Project Name">
+        <span class="col-6">
+            <i class="fa fa-tasks" aria-hidden="true"></i>
+            <input type="text" class="d-inline-block form-control no-border" placeholder="Project Name" style="font-weight: bold; width: 80%;">
         </span>
-        <span class="offset-4 col-2 bg-info">
-            <input type="text" class="form-control no-border" placeholder="YYYY - YYYY">
+        <span class="offset-4 col-2">
+            <input type="text" class="text-end form-control no-border" placeholder="YYYY - YYYY">
         </span>
-        <span class="bg-danger">
-            <input type="text" class="form-control no-border" placeholder="Project Description">
+        <span>
+            <div class="autosize01" contenteditable="true" data-text="Here goes your project description" style="padding-left: 2em;">
+            </div>
         </span>
     </div>
-    <hr>
 </span>

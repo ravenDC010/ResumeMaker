@@ -3,14 +3,18 @@
     box-shadow: none;
 }
 
-.autosize01{
+.autosize01 {
     min-width: 100%;
     min-height: 2em;
-    max-width:90vw;
+    max-width: 90vw;
     overflow: hidden;
     height: fit-content;
+    padding: 1em;
 }
 
+[contentEditable=true]:empty:not(:focus):before {
+    content: attr(data-text)
+}
 .txta {
     width: 100%;
     max-width: 100%;

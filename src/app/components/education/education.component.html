@@ -1,14 +1,20 @@
 <span *ngFor="let num1 of num" id="education_{{num1}}">
     <div class="div row">
-        <span class="col-6 bg-success">
-            <input type="text" class="form-control no-border" placeholder="Course Name">
+        <span class="col-6">
+            <i class="fa fa-university" aria-hidden="true"></i>
+            <input type="text" class="d-inline-block form-control no-border" placeholder="Course Name" style="font-size: 20px; font-weight: bold; width: 80%;">
         </span>
-        <span class="offset-4 col-2 bg-info">
-            <input type="text" class="form-control no-border" placeholder="YYYY - YYYY">
+        <span class="offset-4 col-2">
+            <input type="text" class="text-end form-control no-border" placeholder="YYYY - YYYY">
         </span>
-        <span class="bg-danger">
-            <input type="text" class="form-control no-border" placeholder="Insitute Name">
+        <span class="col-6">
+            <input type="text" class="form-control no-border" placeholder="Institute Name" style="font-weight: bold; padding-left: 2em;">
+        </span>
+        <span class="col-12">
+            <span  style="padding-left: 2em;">
+                Grade:
+            </span>
+            <input type="text" class="d-inline-block form-control no-border w-50" placeholder="Grade">
         </span>
     </div>
-    <hr>
 </span>

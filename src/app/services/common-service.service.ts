@@ -119,6 +119,7 @@ export class CommonServiceService {
   addOverallWork() {
     this.overallWork = true;    
     this.overallWorks.next(this.overallWork);
+    console.log(`overallWork: ${this.overallWork}`);
   }
 
   ///////////////////////////
@@ -199,15 +200,15 @@ export class CommonServiceService {
   addPhone() {
     this.phone = true;
     this.phones.next(this.phone);
-    console.log(`common service ${this.phone}`);
-    console.log(`common services ${this.phones}`);
+    console.log(`common service phone: ${this.phone}`);
+    console.log(`common services phones: ${this.phones}`);
   }
 
   removePhone() {
     this.phone = false;    
     this.phones.next(this.phone);
-    console.log(`common service ${this.phone}`);
-    console.log(`common services ${this.phones}`);
+    console.log(`common service phone: ${this.phone}`);
+    console.log(`common services phones: ${this.phones}`);
   }
   addDob() {
     this.dob = true;
