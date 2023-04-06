@@ -1,14 +1,17 @@
 <span *ngFor="let num1 of num" id="work_{{num1}}">
     <div class="row">
-        <span class="col-6">
+        <span class="col-12">
             <i class="fa fa-briefcase" aria-hidden="true"></i> 
-            <input type="text" class="d-inline-block form-control no-border" placeholder="Company Name" style="font-size: 20px; font-weight: bold; width: 80%;">
-        </span>
-        <span class="offset-4 col-2">
-            <input type="text" class="text-end form-control no-border" placeholder="YYYY - YYYY">
+            <input type="text" class="d-inline-block form-control no-border text-uppercase" placeholder="Company Name" style="font-weight: bold; width: 80%;">
         </span>
         <span class="col-6">
             <input type="text" class="form-control no-border" placeholder="Designation" style="font-weight: bold; padding-left: 2em;">
+        </span>
+        <span class="offset-3 col-3">
+            <!-- <input type="text" class="text-end form-control no-border" placeholder="YYYY - YYYY"> -->
+            <input type="date" class="no-border" style="font-size: 13px; width: 40%;">
+            <span style="font-size: 13px; width: 100%;">to &nbsp; &nbsp; </span>
+            <input type="date" class="no-border" style="font-size: 13px; width: 40%;">
         </span>
         <span class="col-12">
             <div class="autosize01" contenteditable="true" data-text="Here goes your work description" style="padding-left: 2em;">
